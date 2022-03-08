@@ -68,6 +68,14 @@ span {
 }
 
 .controls {
+    display: flex;
+    align-items: flex-end;
+    width: 5.8rem;
+    height: 3.5rem;
+    justify-content: space-between;
+}
+
+.playPause {
     width: 3.5rem;
     height: 3.5rem;
     background: darkred;
@@ -83,7 +91,28 @@ span {
     transition: all 0.2s ease-out;
 }
 
-.controls:hover {
+.stop {
+    width: 2rem;
+    height: 2rem;
+    background: darkred;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 0rem darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 4px 0 0 0;
+    transition: all 0.2s ease-out;
+}
+
+.playPause:hover {
     font-size: 1.6rem;
+    box-shadow: 0 0 0.5rem darkgray;
+}
+
+.stop:hover {
+    font-size: 1.1rem;
     box-shadow: 0 0 0.5rem darkgray;
 }
