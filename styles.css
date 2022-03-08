@@ -47,7 +47,7 @@ span {
     display: flex;
     background: #222422;
     border-radius: 0.5rem;
-    box-shadow: 0 1rem 1.5rem darkgrey;
+    box-shadow: 0 0.5rem 5.5rem darkgrey;
 }
 
 .imageContainer img {
