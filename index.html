@@ -13,11 +13,30 @@
     <main>
         <div class="background">
 
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="border bTop"></div>
+            <div class="border bBottom"></div>
+
+            
             <div class="songContainer wrapper">
                 <div class="imageContainer">
                     <img src="/assets/ImpressionableDevotedHarpyeagle-size_restricted.gif" alt="">
                 </div>
-
+                
                 <div class="player">
                     <div class="details">
                         <div class="info">
@@ -29,7 +48,7 @@
                                 <span id="duration" >0:00</span>
                             </div>
                         </div>
-
+                        
                         <div class="controls">
                             <div class="stop">
                                 <i class="fi fi-sr-stop" id="stop"></i>
@@ -38,16 +57,29 @@
                             <div class="playPause">
                                 <i class="fi fi-sr-play" id="playPause"></i>
                             </div>
-
+                            
                         </div>
-
+                        
                     </div>
-                        <div id="waveform"></div>
+                    <div id="waveform"></div>
                 </div>
-
+                
             </div>
-
+            
         </div>
+        <svg>
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in='SourceGraphic' stdDeviation='10' />
+                    <feColorMatrix in='name' mode='matrix'
+                        values='1 0 0 0 0
+                                0 1 0 0 0
+                                0 0 1 0 0 
+                                0 0 0 30 -15' />
+                    <feBlend in='SourceGraphic' />
+                </filter>
+            </defs>
+        </svg>
     </main>
    
    
