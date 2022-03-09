@@ -8,13 +8,15 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* Setting standards */
+
 html {
     font-size: 125%;
 }
 
 body {
-    background: black;
-    color: white;
+    background: #99582A;
+    color: #FFE6A7;
     overflow: hidden;
     font-family: 'Roboto Serif', serif;
     font-weight: 400;
@@ -23,9 +25,20 @@ body {
 h1,
 h2,
 p,
-span {
+span, 
+a {
     padding: 0;
     margin: 0;
+}
+
+a {
+    color: #FFE6A7;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: rgba(192, 192, 192, 0.651);
 }
 
 h1 {
@@ -37,6 +50,7 @@ h2 {
     font-weight: 400;
     font-size: 1.2rem;
     padding-bottom: 7px;
+    color: #BB9457;
 }
 
 p {
@@ -51,6 +65,8 @@ p {
     margin: 0 auto;
 }
 
+/* Creating background for goo effect */
+
 .background {
     width: 100vw;
     height: 100vh;
@@ -62,20 +78,21 @@ p {
 
 }
 
+/* styling for song player */
+
 .contentContainer {
    margin: 70px auto 0 auto;
 }
 
-
-
-
 .songContainer {
     display: flex;
-    background: #222422;
+    background: #432818;
     border-radius: 1.5rem;
-    box-shadow: 0 0rem 3rem darkgrey;
+    box-shadow: 0 0rem 3rem #6F1D1B;
     margin-bottom: 50px;
 }
+
+/* Container for gif image */
 
 .imageContainer img {
     width: 100%;
@@ -96,8 +113,10 @@ p {
 }
 
 .time {
-    color: #777;
+    color: #99582A;
 }
+
+/* styles for button */
 
 .controls {
     display: flex;
@@ -110,11 +129,11 @@ p {
 .playPause {
     width: 3.5rem;
     height: 3.5rem;
-    background: darkred;
-    color: black;
+    background: #6F1D1B;
+    color: #BB9457;
     cursor: pointer;
     border-radius: 50%;
-    box-shadow: 0 0 0rem darkgray;
+    box-shadow: 0 0 0rem #6F1D1B;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,11 +145,11 @@ p {
 .stop {
     width: 2rem;
     height: 2rem;
-    background: darkred;
-    color: black;
+    background: #6F1D1B;
+    color: #BB9457;
     cursor: pointer;
     border-radius: 45%;
-    box-shadow: 0 0 0rem darkgray;
+    box-shadow: 0 0 0rem #6F1D1B;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,21 +162,24 @@ p {
 
 .playPause:hover {
     font-size: 1.6rem;
-    box-shadow: 0 0 0.2rem black;
+    box-shadow: 0 0 0.2rem #BB9457;
 }
 
 
 .stop:hover {
     font-size: 1rem;
-    box-shadow: 0 0 0.2rem black;
+    box-shadow: 0 0 0.2rem #BB9457;
 }
 
+/* no diggity no doubt images */
 
 .contentImage {
     width: 100px;
     height: 100px;
     border-radius: 7px;
 }
+
+/* Sample discription */
 
 .description {
     width: 100%;
@@ -166,10 +188,14 @@ p {
 
 }
 
+/* P tag with question */
+
 .question {
     padding-top: 10px;
     padding-bottom: 5px;
 }
+
+/* styling for footer area  */
 
 footer {
   width: 100%;
@@ -186,16 +212,20 @@ footer div {
     padding-top: 30px;
 }
 
+/* falling round balls */
+
 .particle {
     width: 100px;
     height: 100px;
     top: -20%;
-    background: #777;
+    background: #432818;
     position: absolute;
     z-index: -10;
     border-radius: 50%;
     animation: fall 15s infinite;
 }
+
+/* animation for balls  */
 
 @keyframes fall {
     0% {top: -20%;}
@@ -203,6 +233,8 @@ footer div {
     80% {top: 85%;}
     100% {top: 100%;}
 }
+
+/* changes the styles for each ball to make them more unique */
 
 .particle:nth-of-type(2n) {
     width: 60px;
@@ -273,9 +305,11 @@ footer div {
     animation-delay: 15s;
 }
 
+/* Top and bottom borders */
+
 .border {
     position: absolute;
-    background: #777;
+    background: #432818;
     width: 100%;
     height: 10%;
 }
@@ -288,6 +322,8 @@ footer div {
     bottom: 0;
     left: 0;
 }
+
+/* start of media queries */
 
 @media (max-width: 1000px) {
     .border {

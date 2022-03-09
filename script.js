@@ -16,8 +16,8 @@ const timeCalc = (value) => {
 
 const wavesurfer = WaveSurfer.create({
     container: '#waveform',
-    waveColor: 'violet',
-    progressColor: 'purple',
+    waveColor: '#BB9457',
+    progressColor: '#99582A',
     barWidth: 2,
     responsive: true, 
     hideScrollbar:true,
