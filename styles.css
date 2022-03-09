@@ -380,3 +380,9 @@ footer div {
     margin-top: 12px;
     }
 }
+
+@media (max-width: 450px) {
+    .contentContainer {
+   margin: 20px auto 0 auto;
+}
+}
