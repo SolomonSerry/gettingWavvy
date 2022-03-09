@@ -43,13 +43,13 @@ wavesurfer.on("audioprocess", function(e) {
 });
 
 wavesurfer.on("play", function(e) {
-    playPause.classList.remove("fi-sr-play")
-    playPause.classList.add("fi-sr-pause")
+    playPause.classList.remove("fi-br-play")
+    playPause.classList.add("fi-br-pause")
 });
 
 wavesurfer.on("pause", function(e) {
-    playPause.classList.remove("fi-sr-pause")
-    playPause.classList.add("fi-sr-play")
+    playPause.classList.remove("fi-br-pause")
+    playPause.classList.add("fi-br-play")
 });
 
 wavesurfer.on("seek", function(e) {

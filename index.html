@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;600&display=swap" rel="stylesheet">
+    <!-- <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'> -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/wavesurfer.js"></script>
     <title>Getting Wavy</title>
@@ -31,41 +36,62 @@
             <div class="border bTop"></div>
             <div class="border bBottom"></div>
 
-            
-            <div class="songContainer wrapper">
-                <div class="imageContainer">
-                    <img src="/assets/ImpressionableDevotedHarpyeagle-size_restricted.gif" alt="">
-                </div>
-                
-                <div class="player">
-                    <div class="details">
-                        <div class="info">
-                            <h1>Work It</h1>
-                            <h2>Prod. By Solomon Serry</h2>
-                            <div class="time">
-                                <span id="current" >0:00</span>
-                                <span> / </span>
-                                <span id="duration" >0:00</span>
-                            </div>
-                        </div>
-                        
-                        <div class="controls">
-                            <div class="stop">
-                                <i class="fi fi-sr-stop" id="stop"></i>
-                            </div>
-                            
-                            <div class="playPause">
-                                <i class="fi fi-sr-play" id="playPause"></i>
-                            </div>
-                            
-                        </div>
-                        
+
+            <div class="contentContainer wrapper">
+
+                <div class="songContainer wrapper">
+                    <div class="imageContainer">
+                        <img src="/assets/ImpressionableDevotedHarpyeagle-size_restricted.gif" alt="">
                     </div>
-                    <div id="waveform"></div>
+                    
+                    <div class="player">
+                        <div class="details">
+                            <div class="info">
+                                <h1>Work It</h1>
+                                <h2>Prod. By Solomon Serry</h2>
+                                <div class="time">
+                                    <span id="current" >0:00</span>
+                                    <span> / </span>
+                                    <span id="duration" >0:00</span>
+                                </div>
+                            </div>
+                            
+                            <div class="controls">
+                                <div class="stop">
+                                    <i class="fi fi-br-stop" id="stop"></i>
+                                </div>
+                                
+                                <div class="playPause">
+                                    <i class="fi fi-br-play" id="playPause"></i>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                        <div id="waveform"></div>
+                    </div>
+                    
                 </div>
+        
+                <div class="description">
+                    <p>Hip hop sample based beat created using Native Instruments Maschine and Serato Sample.  All samples were chopped from the song 'No Diggity' by the ledgendary R&B group Black Street.</p>
+
+                    <p class="question">Is this track fire???</p>
+
+                    <img class="contentImage" src="/assets/il_570xN.1594607960_mo4r.webp" alt="">
+                </div>
+
                 
+                <footer>
+                    <p>Created and Designed by Solomon Serry <i class="fi fi-br-copyright"></i> 2022</p>
+
+                    <div>
+                        <i class="fi fi-br-envelope"></i>
+                        <i class="fi fi-brands-linkedin"></i>
+                        <i class="fi fi-brands-github"></i>
+                    </div>
+                </footer>
             </div>
-            
         </div>
         <svg>
             <defs>
@@ -80,9 +106,9 @@
                 </filter>
             </defs>
         </svg>
+            
     </main>
-   
-   
+    
     <script src="script.js"></script>
 </body>
 </html>
